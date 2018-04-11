@@ -1,0 +1,83 @@
+section
+  padding-bottom: $section-padding
+  padding-top: $section-padding
+
+#hero
+  background:
+    attachment: fixed
+    image: linear-gradient(rgba($white, 0.6), rgba($white, 0.6)), url('../img/portfolio/IMG_4199.jpg')
+    position: right top
+    size: cover
+  +break-sm
+    background-position: center 10%
+  box-sizing: border-box
+  height: 100vh
+  padding-bottom: $header-padding
+  padding-top: $header-padding
+  position: relative
+  .logo
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    img
+      width: 35%
+      max-width: 50rem
+      margin: 0 auto
+      @media only screen and (orientation: landscape) and (max-width: 850px)
+        width: 20%
+  .slogan
+    position: absolute
+    bottom: $header-padding
+    left: 0
+    right: 0
+    text-align: center
+
+#about
+  background-color: $white
+  img
+    border-radius: 0.5rem
+  .portfolio
+    margin-bottom: -$section-padding
+    padding-top: $section-padding
+    +clearfix
+    img
+      border-radius: 0
+      float: left
+      width: calc(100% / 3)
+
+#testimonials
+  background-color: $secondary
+  color: $white
+  .flex-grid
+    align-items: center
+    justify-content: center
+    margin: 0 #{-$gutter}
+  small
+    box-sizing: border-box
+    display: block
+    padding-right: 1rem
+
+#services
+  background-color: $white
+  text-align: center
+  .service-content
+    padding: 4rem 2rem 0
+    &:first-child
+      padding-top: 0
+    +break-md
+      &:nth-child(-n+2)
+        padding-top: 0
+
+#charity
+  background-color: $gray
+  color: $lightGray
+  img
+    max-height: 8rem
+    margin: 0 auto
+  .charity-header
+    padding-bottom: $section-header-padding
+  .charity-info
+    padding-top: 1.5rem
+    text-align: center

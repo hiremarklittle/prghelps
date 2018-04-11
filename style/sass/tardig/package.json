@@ -1,0 +1,26 @@
+{
+  "name": "tardig",
+  "version": "1.0.0",
+  "description": "(TARDIG is a front-end framework utilizing a responsive/fluid grid system, typography, images, media objects, and development assistance tools)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://tardig.github.io"
+  },
+  "keywords": [
+    "tardig",
+    "framework",
+    "front-end",
+    "front",
+    "end",
+    "grid",
+    "typography",
+    "development",
+    "assistance"
+  ],
+  "author": "Mark Little <yournamehere_mark@yahoo.com> (https://tardig.github.io)",
+  "license": "MIT"
+}

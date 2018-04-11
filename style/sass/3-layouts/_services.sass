@@ -1,0 +1,34 @@
+#services-header
+  background-color: $secondary
+  color: $white
+  padding-bottom: $header-padding
+  padding-top: $header-padding
+  text-align: center
+  i
+    cursor: pointer
+    display: block
+    +font(10)
+    &:hover + .tooltip
+      opacity: 1
+  .service-link
+    display: block
+    position: relative
+  .tooltip
+    position: absolute
+    font-family: "Maven Pro"
+    letter-spacing: 0.05rem
+    opacity: 0
+    transition: opacity 0.3s ease-in-out
+    width: 100%
+
+#services-content
+  background-color: $white
+  h3
+    color: $primary
+  .service-description
+    display: none
+
+  input[type="radio"]
+    display: none
+    &:checked + .service-description
+      display: block

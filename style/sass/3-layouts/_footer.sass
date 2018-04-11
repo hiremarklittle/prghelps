@@ -1,0 +1,40 @@
+footer
+  background-color: $white
+  +font(-2)
+  padding-top: $header-padding
+  .container
+    padding-bottom: $header-padding
+  img
+    margin: 0 auto
+    max-height: 5rem
+  address
+    font-style: normal
+  .row > [class*='col']
+    padding-bottom: 1rem
+    padding-top: 1rem
+    +break-sm
+      padding-bottom: 0
+      padding-top: 0
+
+  .social-media
+    background-color: $secondary
+    margin-bottom: $header-padding
+    margin-top: -$header-padding
+    padding: $header-padding / 2 0
+    text-align: center
+    a
+      color: $white
+      font-size: 2.3131rem
+      line-height: 2.3131rem
+      text-decoration: none
+    .container
+      padding-bottom: 0
+
+
+  .copyright
+    background-color: lighten($black, 90)
+    color: $black
+    padding: 1.5rem
+    p
+      +font(-2)
+      margin: 0
