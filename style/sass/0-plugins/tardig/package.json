@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tardig",
+        "scope": null,
+        "escapedName": "tardig",
+        "name": "tardig",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\xampp\\htdocs\\sites\\provres2\\style"
+    ]
+  ],
+  "_from": "tardig@latest",
+  "_id": "tardig@1.0.0",
+  "_inCache": true,
+  "_location": "/tardig",
+  "_nodeVersion": "6.10.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/tardig-1.0.0.tgz_1500401068261_0.4402536693960428"
+  },
+  "_npmUser": {
+    "name": "marklittle",
+    "email": "yournamehere_mark@yahoo.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tardig",
+    "scope": null,
+    "escapedName": "tardig",
+    "name": "tardig",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/tardig/-/tardig-1.0.0.tgz",
+  "_shasum": "f0cfcc05ac9b8d8fe84afa98be897f55f561d96c",
+  "_shrinkwrap": null,
+  "_spec": "tardig",
+  "_where": "C:\\xampp\\htdocs\\sites\\provres2\\style",
+  "author": {
+    "name": "Mark Little",
+    "email": "yournamehere_mark@yahoo.com",
+    "url": "https://tardig.github.io"
+  },
+  "dependencies": {},
+  "description": "(TARDIG is a front-end framework utilizing a responsive/fluid grid system, typography, images, media objects, and development assistance tools)",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "f0cfcc05ac9b8d8fe84afa98be897f55f561d96c",
+    "tarball": "https://registry.npmjs.org/tardig/-/tardig-1.0.0.tgz"
+  },
+  "keywords": [
+    "tardig",
+    "framework",
+    "front-end",
+    "front",
+    "end",
+    "grid",
+    "typography",
+    "development",
+    "assistance"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "marklittle",
+      "email": "yournamehere_mark@yahoo.com"
+    }
+  ],
+  "name": "tardig",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://tardig.github.io"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

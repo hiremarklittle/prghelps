@@ -1,0 +1,73 @@
+#nav-toggle
+  display: none
+  &:checked + .page-wrapper
+    .page-content
+      +break-sm
+        height: 100vh
+        overflow: auto
+        transform: scale(0.7)
+        transform-origin: right center
+    header
+      position: absolute
+    & > nav
+      left: 0rem
+    #nav-toggle-btn
+      left: 15.5rem
+
+#nav-toggle-btn
+  background-color: $primary
+  border-radius: 50%
+  color: $white
+  cursor: pointer
+  display: inline-block
+  font-size: 1.5rem
+  height: 3.5rem
+  left: 0
+  line-height: 3.5rem
+  position: relative
+  text-align: center
+  transition: left 0.3s $ease-in-out-back
+  width: 3.5rem
+  z-index: 6
+  i
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+nav
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    li
+      margin: 0
+      padding: 0
+      a
+        color: $black
+        text-decoration: none
+
+.page-wrapper
+  .page-content
+    box-shadow: 0px 4px 20px rgba($black, 0.3)
+    transform: scale(1)
+    transform-origin: right center
+    transition: transform 0.3s $ease-in-out-quint
+  & > nav
+    background-color: $gray
+    box-sizing: border-box
+    height: 100%
+    left: -16rem
+    padding: 2rem
+    position: fixed
+    top: 0
+    transition: left 0.3s $ease-in-out-quint
+    width: 16rem
+    z-index: 2
+    li
+      padding: 1rem 0
+      a
+        color: $white
+        +font(2)
+        font-family: "Montserrat"
+        letter-spacing: 0.05rem

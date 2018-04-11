@@ -1,0 +1,27 @@
+.fa-bars
+  color: $lightGray
+
+.fa-circle
+  color: $primary
+
+.service-content i
+  +font(10)
+
+.tooltip
+  background-color: $black
+  border-radius: 0.5rem
+  box-sizing: border-box
+  color: $white
+  display: block
+  padding: 0.5rem
+  position: relative
+  &::before
+    content: ''
+    background-color: $black
+    display: block
+    height: 0.6rem
+    left: 50%
+    position: absolute
+    top: 0
+    transform: translate(-50%, -50%) rotate(45deg)
+    width: 0.6rem
