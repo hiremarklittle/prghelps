@@ -1,0 +1,77 @@
+include _mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Providence Restoration & Construction
+    
+    link(rel="stylesheet", href="style/app.css")
+      
+  body
+    input#nav-toggle(type="checkbox")
+      
+    block vars
+      
+    .page-wrapper(class=pageName)
+      header
+        .container
+          .row
+            .col-12
+              label#nav-toggle-btn(for="nav-toggle")
+                i.icon-bars
+              .call-btn
+                .hide.show-sm-inline-block
+                  +phone("cta cta-dark")
+                .hide-sm
+                    +phone("cta cta-dark", "Call Now")
+        
+      .page-content
+        main.responsive
+          block content
+            
+        footer.responsive
+          .social-media
+            .container
+              .row
+                .col-3: a(href="#"): i.icon-facebook
+                .col-3: a(href="#"): i.icon-twitter
+                .col-3: a(href="#"): i.icon-instagram
+                .col-3: a(href="#"): i.icon-google-plus
+          
+          .container
+            .row
+              .col-sm-2
+                img.img-responsive(src="img/logo/logo.png", alt="Providence Restoration")
+              
+              .col-sm-2.hide.show-md-block
+                nav
+                  ul
+                    +navigation
+                    
+              .col-sm-4.text-center.text-sm-left
+                address
+                  |Providence Restoration
+                  br
+                  |2409 Price Short Cut Rd
+                  br
+                  |Monroe, NC 28110
+                  br
+                  br
+                  i.icon-phone &nbsp;
+                  +phone()
+                  
+              .col-sm-4
+                .row
+                  .col-6: img.img-responsive(src="img/credentials/bbb.png", alt="BBB")
+                  .col-6: img.img-responsive(src="img/credentials/iicrc.png", alt="IICRC")
+                    
+          .copyright
+            p.text-center &copy; 2018 Providence Restoration & Construction
+            
+      nav#main-nav
+        +navigation
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    block scripts

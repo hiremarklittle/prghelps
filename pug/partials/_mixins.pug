@@ -1,0 +1,27 @@
+mixin phone(className, text)
+  - var area = "704"
+  - var prefix = "206"
+  - var number = "8777"
+  - var link = "tel:" + area + prefix + number
+  - var text = text || "(" + area + ") " + prefix + " - " + number
+  - var className = className || ""
+  a(class=className href=link)= text
+  
+mixin navigation
+  ul
+    li: a(href="index.html") Home
+    li: a(href="about.html") About
+    li: a(href="services.html") Services
+    //li: a(href="testimonials.html") Testimonials
+    li: a(href="contact.html") Contact
+    
+mixin services(icon, service)
+  .col-md-6.service-content
+    i(class='icon-' + icon)
+    .service-info
+      h4= service
+      if block
+        block
+      else
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ex corrupti, a in molestias commodi, deleniti, voluptatum animi non amet culpa dolor explicabo. At quo et, nobis atque omnis porro!
+      a.cta(href="services.html") Learn More

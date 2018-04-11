@@ -1,0 +1,84 @@
+extends partials/_template.pug
+
+block vars
+  - var pageName = "home-page"
+
+block content
+  section#hero
+    .container
+      .logo
+        img.img-responsive(src="img/logo/logo.png", alt="Providence Restoration")
+      .slogan
+        a.cta.cta-ghost-dark(href="#about") Always Serving
+
+  section#about
+    .container
+      .row
+        .hide.col-md-6
+          .responsive-embed-16x9
+            video(controls)
+              source(src="img/always-serving.mp4" type="video/mp4")
+              p Please update your browser to support HTML video.
+                
+        .col-md-6
+          h2 About Us
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure itaque veritatis corporis eum laborum fugit magni ad dolores ducimus voluptates porro libero, ullam pariatur est saepe, voluptatum reprehenderit. Numquam, rem.
+          .text-right
+            a.cta.text-right(href="about.html") Read Our Story
+            
+    .portfolio
+      img(src="img/portfolio/CIMG4286.JPG", alt="")
+      img(src="img/portfolio/CIMG4287.JPG", alt="")
+      img(src="img/portfolio/CIMG4288.JPG", alt="")
+
+  section#testimonials
+    .container
+      .row
+        .col-12
+          h2.text-center What Do They Think?
+    .container
+      .flex-grid
+        .col-2.col-sm-1.text-right
+          i.icon-chevron-left
+        .col-8.col-sm-10
+          p.text-center Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptas quia eum, facere dolor ratione animi ea nesciunt doloremque labore quod error iste similique magni nobis exercitationem, nemo, possimus modi.
+          small.text-right John Doe
+        .col-2.col-sm-1.text-left
+          i.icon-chevron-right
+    
+  section#services
+    .container
+      .row
+        .col-12
+          h2 What Do We Do?
+      .row
+        +services('fire', 'Fire Damage')
+          p With over 100 combined years of experience in Fire Restoration and Construction, trust us to be honest, on time and on budget.
+        +services('water', 'Water Damage')
+          p The moment water impacts your property, trust our technicians and state of the art equipment to restore your home or business.
+        +services('storm', 'Storm Damage')
+          p Our professional Water Mitigation, Fire Restoration and Construction Services teams will restore your property to pre-loss condition.
+        +services('construction', 'Construction Services')
+          p Our expert teams will help you restore your property with the #1 ranked contractors in the Carolinas by The Altman Contractor Summary.
+        
+  section#charity
+    .container
+      .row
+        .col-12.text-center.charity-header
+          h2 Giving Back
+          p Providence Restoration gives back by partnering with organizations that we believe in. We partner and get involved financially, volunteering our time, and by bringing awareness to these non-profit partners.
+        
+      .row
+        .col-4.col-md-6.col-lg-4.offset-lg-1.charity-group
+          a(href="http://always-believe.org/" target="_blank")
+            img.img-responsive(src="img/logo/logo-always-believe.png", alt="Always Believe")
+          .charity-info.hide.show-md-block
+            p Always Believe Inc. is a Nonprofit Corporation organized to assist at risk youth ages 12 through 18 in the involvement of activities and programs focusing on student athletics, scholarship, leadership development, character building, mentoring, and team building.
+            a.cta.cta-ghost(href="http://always-believe.org/" target="_blank") Learn More
+            
+        .col-8.col-md-6.col-lg-4.offset-lg-2.charity-group
+          a(href="https://theabandonproject.org/" target="_blank")
+            img.img-responsive(src="img/logo/logo-abandon-project.png", alt="The Abandon Project")
+          .charity-info.hide.show-md-block
+            p The Abandon Project was formed in 2010 after founder Josh Meadows decided to take in a homeless teenager named Abdul. It was this experience that gave Josh’s life a new and focused mission, to go find more kids like Abdul, and pour buckets of hope into them.
+            a.cta.cta-ghost(href="https://theabandonproject.org/" target="_blank") Learn More

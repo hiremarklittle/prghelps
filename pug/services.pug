@@ -1,0 +1,62 @@
+extends partials/_template.pug
+
+block content
+  section#services-header
+    .container
+      .row
+        .col-12
+          h2 Services
+      .row
+        .col-3
+          label.service-link(for="service-fire-content")
+            i.icon-fire
+            span.tooltip Fire Damage  
+        .col-3
+          label.service-link(for="service-water-content")
+            i.icon-water
+            span.tooltip Water Damage
+        .col-3
+          label.service-link(for="service-storm-content")
+            i.icon-storm
+            span.tooltip Storm Damage
+        .col-3
+          label.service-link(for="service-construction-content")
+            i.icon-construction
+            span.tooltip Construction
+          
+  section#services-content
+    .container
+      .row
+        .col-12
+          input#service-fire-content(type="radio" name="service-content" checked)
+          .service-description.service-fire
+            h3 Fire Damage Restoration
+            p Dealing with a fire at your home or business can be a devastating and frustrating situation. Often, the impact of a fire reaches much further than structural damage. Pictures, family heirlooms, important documents, appliances, fixtures, and more may be impacted by a fire. The most crucial decision you will make is who you will trust to repair your family home or business and restore your most valuable belongings.
+            p Providence Restoration’s team of experts is here for you with over 100 combined years of experience in fire restoration and construction services. We have been ranked The #1 Contractor in the Carolinas by The Altman Contractor Survey and have the ability to serve in multiple states as a certified Unlimited Licensed General Contractor. We understand your desire to get life back to normal as soon as possible and we are grateful to serve your family or business.
+            p Our Repair Estimators are ready to meet with you at your home or place of business to review damages and provide you with an estimate for structural repair and restoration of contents.  At Providence Restoration, we make staying on budget a priority and will walk you through the complexities of insurance claims and settlements.
+            p In order to ensure you are fully informed and included in the entire process, we provide weekly updates on each repair, along with the previous week’s successes, and the schedule for the following week. We take pride in our efficiency and, most times, we are able to complete projects well ahead of schedule. 
+            p You can trust the Providence Restoration team to repair your property and get your life back to normal. We are Always Serving.
+
+          input#service-water-content(type="radio" name="service-content")
+          .service-description.service-water
+            h3 Water Damage Restoration
+            p The moment a flood impacts your property, whether it be from a burst pipe, other plumbing issues or a weather event, the clock starts. If water is not properly removed from flooring and walls, harmful mold will appear which can be dangerous for the health of your family or those who work for you. Per insurance regulation, it is the property owner’s responsibility to take immediate action and have any water damage handled by a certified professional. Providence Restoration understands that this can be a stressful time and strives to make the process as streamlined as possible, so you can get your life back to normal faster.
+            p Providence Restoration takes pride in being on the cutting edge of the Water Mitigation industry. Our Water Mitigation Technicians are fully certified and undergo a rigorous background check before being sent to your home or business. Our technicians embrace our company philosophy, Always Serving, and are eager to help.
+            p Our equipment is state of the art and specially designed to gently remove water from hardwood, carpet, tile, laminate, subfloor, drywall, trim, paint, and framing with minimal damage. 
+            p Our Repair Estimators are ready to meet with you at your home or place of business to review damages and provide you with an estimate for water mitigation and removal.  At Providence Restoration, we make staying on budget a priority and will walk you through the complexities of insurance claims and settlements.
+            p You can trust the Providence Restoration team to repair your property and get your life back to normal. We are Always Serving.
+
+          input#service-storm-content(type="radio" name="service-content")
+          .service-description.service-storm
+            h3 Storm Damage Restoration
+            p Wind damage, roof damage, fallen limbs, water damage, and even fire damage, can be the result of severe weather. Navigating the ins and outs of repairing weather-related damage to your home or business can be a daunting task. Providence Restoration’s team of experts is here for you with over 100 combined years of experience in fire restoration and construction services, as well as, cutting edge water mitigation services. No matter how weather has impacted your property, our team of experts will help you get life back to normal.
+            p Providence Restoration has been ranked The #1 Contractor in the Carolinas by The Altman Contractor Survey. We also have the ability to serve in multiple states as a certified Unlimited Licensed General Contractor. 
+            p Our dedication to serving you shows through our continued communication throughout the restoration and construction process. We provide weekly updates on each repair, along with the previous week’s successes, and the schedule for the following week. We take pride in our efficiency and, most times, we are able to complete projects well ahead of schedule. 
+            p By choosing Providence Restoration, you are ensuring that your home or business will be back to normal as soon as possible. We are Always Serving.
+ 
+          input#service-construction-content(type="radio" name="service-content")
+          .service-description.service-construction
+            h3 Construction
+            p When you are ready to repair your home or business space after weather, fire or water damage, trust Providence Restoration. The most crucial decision you will make is who you will trust to repair your family home or business. We are ranked #1 Contractor in the Carolinas by The Altman Contractor Summary and can serve in multiple states as a certified Unlimited Licensed General Contractor. Providence Restoration’s team of experts is here for you with over 100 combined years of experience in fire restoration and construction services.
+            p From the moment your home or business is damaged, we are ready to help your life get back to normal. Our Repair Estimators are ready to meet with you to review damages and provide you with an estimate for structural repair.  We will walk you through the complexities of insurance claims and settlements, making the process simple and easy to understand.
+            p We pride ourselves on sticking to the budget and timeline for each project and, many times, complete projects well ahead of schedule. Our efficient and eager team is Always Serving.

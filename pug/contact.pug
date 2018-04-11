@@ -1,0 +1,24 @@
+extends partials/_template.pug
+
+block content
+  section#contact-form
+    .container
+      .row
+        .col-md-6.push-md-6
+          h2 Contact Us
+          p Need a quote? Send us an email using the contact form, or give us a call.
+          +phone('cta')
+        .col-md-6.pull-md-6
+          form(action="")
+            div
+              input#name(type="text" required)
+              label(for="name") Name
+            div
+              input#email(type="email" required)
+              label(for="email") Email
+            div
+              textarea#message
+              label(for="message" required) Message
+            div.text-right
+              input#submit.cta(type="submit", value="Send")
+        
