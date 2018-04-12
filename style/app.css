@@ -3411,7 +3411,7 @@ section {
     #about .portfolio div {
       background-size: cover;
       background-position: center;
-      height: 25rem;
+      height: 10rem;
       display: inline-block;
       float: left;
       width: calc(100% / 3); }
@@ -3421,6 +3421,15 @@ section {
         background-image: url("../img/portfolio/IMG_4194.jpg"); }
       #about .portfolio div:last-child {
         background-image: url("../img/portfolio/IMG_4091.jpg"); }
+      @media only screen and (min-width: 768px) {
+        #about .portfolio div {
+          height: 12rem; } }
+      @media only screen and (min-width: 992px) {
+        #about .portfolio div {
+          height: 14rem; } }
+      @media only screen and (min-width: 1200px) {
+        #about .portfolio div {
+          height: 16rem; } }
 
 #testimonials {
   background-color: #1a5fa8;
@@ -3486,14 +3495,18 @@ section {
     display: block;
     position: relative; }
   #services-header .tooltip {
-    position: absolute;
+    display: none;
     font-family: "Maven Pro";
     letter-spacing: 0.05rem;
     opacity: 0;
+    position: absolute;
     -webkit-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
     width: 100%; }
+    @media only screen and (min-width: 768px) {
+      #services-header .tooltip {
+        display: block; } }
 
 #services-content {
   background-color: #ffffff; }
