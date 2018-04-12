@@ -42,10 +42,20 @@ section
     margin-bottom: -$section-padding
     padding-top: $section-padding
     +clearfix
-    img
-      border-radius: 0
+    div
+      background:
+        size: cover
+        position: center
+      height: 25rem
+      display: inline-block
       float: left
       width: calc(100% / 3)
+      &:first-child
+        background-image: url('../img/portfolio/IMG_3965.jpg')
+      &:nth-child(2)
+        background-image: url('../img/portfolio/IMG_4194.jpg')
+      &:last-child
+        background-image: url('../img/portfolio/IMG_4091.jpg')
 
 #testimonials
   background-color: $secondary
